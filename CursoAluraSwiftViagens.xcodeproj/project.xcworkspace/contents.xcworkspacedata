@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CursoAluraSwiftViagens.xcodeproj">
+      location = "self:/Users/rodrigopaixao/Documents/CursoAlura/Swift/AluraSwiftViagens/CursoAluraSwiftViagens.xcodeproj">
    </FileRef>
 </Workspace>
