@@ -65,6 +65,47 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		9E61A785233F81A300647173 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9EE869B4233675AB0089302C /* Viagem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9E61A786233F81C400647173 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9E61A788233F820500647173 /* View */,
+				9E61A787233F81F300647173 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9E61A787233F81F300647173 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EE869A423365F480089302C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9E61A788233F820500647173 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EE869BA233679C70089302C /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9E61A789233F821800647173 /* ViagemDAO */ = {
+			isa = PBXGroup;
+			children = (
+				9EE869B8233678510089302C /* ViagemDAO.swift */,
+			);
+			path = ViagemDAO;
+			sourceTree = "<group>";
+		};
 		9EE8699423365F460089302C = {
 			isa = PBXGroup;
 			children = (
@@ -84,17 +125,16 @@
 		9EE8699F23365F470089302C /* CursoAluraSwiftViagens */ = {
 			isa = PBXGroup;
 			children = (
-				9E2E9EF72336A3F100B7F822 /* Assets */,
 				9EE869A023365F480089302C /* AppDelegate.swift */,
 				9EE869A223365F480089302C /* SceneDelegate.swift */,
-				9EE869A423365F480089302C /* ViewController.swift */,
+				9E61A785233F81A300647173 /* Model */,
+				9E61A786233F81C400647173 /* Home */,
+				9E61A789233F821800647173 /* ViagemDAO */,
+				9E2E9EF72336A3F100B7F822 /* Assets */,
 				9EE869A623365F480089302C /* Main.storyboard */,
 				9EE869A923365F610089302C /* Assets.xcassets */,
 				9EE869AB23365F610089302C /* LaunchScreen.storyboard */,
 				9EE869AE23365F610089302C /* Info.plist */,
-				9EE869B4233675AB0089302C /* Viagem.swift */,
-				9EE869B8233678510089302C /* ViagemDAO.swift */,
-				9EE869BA233679C70089302C /* TableViewCell.swift */,
 			);
 			path = CursoAluraSwiftViagens;
 			sourceTree = "<group>";
