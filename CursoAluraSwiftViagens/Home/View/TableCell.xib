@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCell" id="oWO-1q-bbb" userLabel="TableCell" customClass="TableCell" customModule="CursoAluraSwiftViagens" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oWO-1q-bbb" id="wgA-Kw-WyJ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="175"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAz-MB-BvY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="175"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIe-SY-W51" userLabel="Label Quantidade Dias">
+                                <rect key="frame" x="8" y="154" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="smp-Rp-8Y1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ge2-Gz-kan" userLabel="Label Titulo">
+                                <rect key="frame" x="8" y="0.0" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ePd-He-s5w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1.png" translatesAutoresizingMaskIntoConstraints="NO" id="t99-In-OBT" userLabel="Image Viagem">
+                                <rect key="frame" x="8" y="23" width="398" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7m-D3-djd" userLabel="Label Preco">
+                                <rect key="frame" x="364" y="154" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fz1-vs-GYG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="LIe-SY-W51" secondAttribute="bottom" id="8ki-TG-hSZ"/>
+                            <constraint firstAttribute="trailing" secondItem="n7m-D3-djd" secondAttribute="trailing" constant="8" id="FcV-f5-Rlp"/>
+                            <constraint firstAttribute="bottom" secondItem="n7m-D3-djd" secondAttribute="bottom" id="G4s-fi-z8y"/>
+                            <constraint firstItem="LIe-SY-W51" firstAttribute="leading" secondItem="lAz-MB-BvY" secondAttribute="leading" constant="8" id="L82-Uf-nRh"/>
+                            <constraint firstItem="LIe-SY-W51" firstAttribute="top" secondItem="t99-In-OBT" secondAttribute="bottom" constant="3" id="Vi0-Am-Y6u"/>
+                            <constraint firstItem="t99-In-OBT" firstAttribute="top" secondItem="Ge2-Gz-kan" secondAttribute="bottom" constant="2" id="cxZ-01-u0w"/>
+                            <constraint firstItem="t99-In-OBT" firstAttribute="leading" secondItem="lAz-MB-BvY" secondAttribute="leading" constant="8" id="poL-e4-vf4"/>
+                            <constraint firstAttribute="trailing" secondItem="t99-In-OBT" secondAttribute="trailing" constant="8" id="r1i-M2-3vC"/>
+                            <constraint firstItem="Ge2-Gz-kan" firstAttribute="leading" secondItem="lAz-MB-BvY" secondAttribute="leading" constant="8" id="tmg-B4-frX"/>
+                            <constraint firstItem="Ge2-Gz-kan" firstAttribute="top" secondItem="lAz-MB-BvY" secondAttribute="top" id="ujq-ty-hfr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lAz-MB-BvY" secondAttribute="bottom" id="ST3-SC-dO4"/>
+                    <constraint firstItem="lAz-MB-BvY" firstAttribute="top" secondItem="wgA-Kw-WyJ" secondAttribute="top" id="Udi-Fc-rl8"/>
+                    <constraint firstItem="lAz-MB-BvY" firstAttribute="leading" secondItem="wgA-Kw-WyJ" secondAttribute="leading" id="a7t-cF-hq1"/>
+                    <constraint firstAttribute="trailing" secondItem="lAz-MB-BvY" secondAttribute="trailing" id="dbF-QL-hgO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imagem" destination="t99-In-OBT" id="SvA-qp-yU7"/>
+                <outlet property="preco" destination="n7m-D3-djd" id="46i-Xa-WxA"/>
+                <outlet property="qtdDias" destination="LIe-SY-W51" id="Qoo-ay-Stp"/>
+                <outlet property="titulo" destination="Ge2-Gz-kan" id="6Ig-VM-Kk0"/>
+            </connections>
+            <point key="canvasLocation" x="318.84057971014494" y="159.04017857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img1.png" width="640" height="426"/>
+    </resources>
+</document>

@@ -12,6 +12,12 @@
 		9E2E9EFF2336A3F200B7F822 /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E2E9EFA2336A3F100B7F822 /* img3.jpg */; };
 		9E2E9F002336A3F200B7F822 /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E2E9EFB2336A3F100B7F822 /* img2.jpg */; };
 		9E2E9F012336A3F200B7F822 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E2E9EFC2336A3F100B7F822 /* img1.png */; };
+		9E7A23D52385B7FC00860CFD /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A23D42385B7FC00860CFD /* ReusableView.swift */; };
+		9E7A23D72385B8F000860CFD /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A23D62385B8F000860CFD /* TableView.swift */; };
+		9E7A23DB2385C08800860CFD /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7A23DA2385C08800860CFD /* TableCell.xib */; };
+		9E7A23DD2385C95300860CFD /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A23DC2385C95300860CFD /* TableCell.swift */; };
+		9E7A23DF2385CC9400860CFD /* LabelTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7A23DE2385CC9300860CFD /* LabelTitle.xib */; };
+		9E7A23E12385CCB800860CFD /* LabelTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A23E02385CCB800860CFD /* LabelTitle.swift */; };
 		9EE869A123365F480089302C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE869A023365F480089302C /* AppDelegate.swift */; };
 		9EE869A323365F480089302C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE869A223365F480089302C /* SceneDelegate.swift */; };
 		9EE869A523365F480089302C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE869A423365F480089302C /* ViewController.swift */; };
@@ -20,7 +26,6 @@
 		9EE869AD23365F610089302C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE869AB23365F610089302C /* LaunchScreen.storyboard */; };
 		9EE869B5233675AB0089302C /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE869B4233675AB0089302C /* Viagem.swift */; };
 		9EE869B9233678520089302C /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE869B8233678510089302C /* ViagemDAO.swift */; };
-		9EE869BB233679C70089302C /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE869BA233679C70089302C /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,12 @@
 		9E2E9EFA2336A3F100B7F822 /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
 		9E2E9EFB2336A3F100B7F822 /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
 		9E2E9EFC2336A3F100B7F822 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		9E7A23D42385B7FC00860CFD /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		9E7A23D62385B8F000860CFD /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		9E7A23DA2385C08800860CFD /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		9E7A23DC2385C95300860CFD /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		9E7A23DE2385CC9300860CFD /* LabelTitle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelTitle.xib; sourceTree = "<group>"; };
+		9E7A23E02385CCB800860CFD /* LabelTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTitle.swift; sourceTree = "<group>"; };
 		9EE8699D23365F470089302C /* CursoAluraSwiftViagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoAluraSwiftViagens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE869A023365F480089302C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EE869A223365F480089302C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +50,6 @@
 		9EE869AE23365F610089302C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EE869B4233675AB0089302C /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
 		9EE869B8233678510089302C /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViagemDAO.swift; sourceTree = "<group>"; };
-		9EE869BA233679C70089302C /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +103,11 @@
 		9E61A788233F820500647173 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9EE869BA233679C70089302C /* TableViewCell.swift */,
+				9E7A23D62385B8F000860CFD /* TableView.swift */,
+				9E7A23DA2385C08800860CFD /* TableCell.xib */,
+				9E7A23DC2385C95300860CFD /* TableCell.swift */,
+				9E7A23DE2385CC9300860CFD /* LabelTitle.xib */,
+				9E7A23E02385CCB800860CFD /* LabelTitle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -104,6 +118,14 @@
 				9EE869B8233678510089302C /* ViagemDAO.swift */,
 			);
 			path = ViagemDAO;
+			sourceTree = "<group>";
+		};
+		9E7A23D32385B7DF00860CFD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9E7A23D42385B7FC00860CFD /* ReusableView.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		9EE8699423365F460089302C = {
@@ -130,6 +152,7 @@
 				9E61A785233F81A300647173 /* Model */,
 				9E61A786233F81C400647173 /* Home */,
 				9E61A789233F821800647173 /* ViagemDAO */,
+				9E7A23D32385B7DF00860CFD /* Utils */,
 				9E2E9EF72336A3F100B7F822 /* Assets */,
 				9EE869A623365F480089302C /* Main.storyboard */,
 				9EE869A923365F610089302C /* Assets.xcassets */,
@@ -200,7 +223,9 @@
 				9EE869AD23365F610089302C /* LaunchScreen.storyboard in Resources */,
 				9E2E9F012336A3F200B7F822 /* img1.png in Resources */,
 				9E2E9EFF2336A3F200B7F822 /* img3.jpg in Resources */,
+				9E7A23DF2385CC9400860CFD /* LabelTitle.xib in Resources */,
 				9E2E9EFE2336A3F200B7F822 /* img4.jpg in Resources */,
+				9E7A23DB2385C08800860CFD /* TableCell.xib in Resources */,
 				9E2E9EFD2336A3F200B7F822 /* img5.jpg in Resources */,
 				9EE869AA23365F610089302C /* Assets.xcassets in Resources */,
 				9EE869A823365F480089302C /* Main.storyboard in Resources */,
@@ -217,9 +242,12 @@
 			files = (
 				9EE869B5233675AB0089302C /* Viagem.swift in Sources */,
 				9EE869B9233678520089302C /* ViagemDAO.swift in Sources */,
+				9E7A23DD2385C95300860CFD /* TableCell.swift in Sources */,
 				9EE869A523365F480089302C /* ViewController.swift in Sources */,
-				9EE869BB233679C70089302C /* TableViewCell.swift in Sources */,
 				9EE869A123365F480089302C /* AppDelegate.swift in Sources */,
+				9E7A23E12385CCB800860CFD /* LabelTitle.swift in Sources */,
+				9E7A23D72385B8F000860CFD /* TableView.swift in Sources */,
+				9E7A23D52385B7FC00860CFD /* ReusableView.swift in Sources */,
 				9EE869A323365F480089302C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -350,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -367,6 +395,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U57RZAEVX;
 				INFOPLIST_FILE = CursoAluraSwiftViagens/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +414,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U57RZAEVX;
 				INFOPLIST_FILE = CursoAluraSwiftViagens/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
