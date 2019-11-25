@@ -27,6 +27,10 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: TableViewDelegate {
+    func addController(controller: UIViewController) {
+        addChild(controller)
+    }
+    
     func doAsUWant() {
         
     }

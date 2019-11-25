@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,8 +41,8 @@
                                         <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YHc-Kv-IhC" secondAttribute="trailing" constant="20" symbolic="YES" id="97w-9f-zud"/>
                                     <constraint firstItem="YHc-Kv-IhC" firstAttribute="top" secondItem="TlG-Bx-fH2" secondAttribute="bottom" constant="4" id="Cci-ct-OPi"/>
@@ -67,7 +67,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="C5j-qa-8Zn" secondAttribute="trailing" constant="20" symbolic="YES" id="GRw-Jd-B4D"/>
                                     <constraint firstItem="C5j-qa-8Zn" firstAttribute="leading" secondItem="5m4-vw-b7T" secondAttribute="leading" constant="29" id="RlO-YI-EcE"/>
@@ -87,7 +87,7 @@
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="T8I-gA-SUW" firstAttribute="top" secondItem="6Xy-er-Txk" secondAttribute="top" constant="10" id="2tr-8W-jF6"/>
                                     <constraint firstAttribute="bottom" secondItem="T8I-gA-SUW" secondAttribute="bottom" constant="10" id="8gM-WD-nVN"/>
@@ -126,7 +126,75 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-67.5" y="137.32394366197184"/>
+            <point key="canvasLocation" x="-1223" y="145"/>
+        </scene>
+        <!--Custom Page View Controller-->
+        <scene sceneID="e8K-sg-eDi">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ele-hD-Vcb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <pageViewController storyboardIdentifier="CustomPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="icD-CD-NQc" customClass="CustomPageViewController" customModule="CursoAluraSwiftViagens" customModuleProvider="target" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="979" y="145"/>
+        </scene>
+        <!--View Controller1-->
+        <scene sceneID="qug-0w-DnZ">
+            <objects>
+                <viewController storyboardIdentifier="ViewController1" id="Mvg-Xw-TYY" customClass="ViewController1" customModule="CursoAluraSwiftViagens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="euf-aX-G86">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUx-r8-8Ok">
+                                <rect key="frame" x="132.5" y="273.5" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MUx-r8-8Ok" firstAttribute="centerY" secondItem="euf-aX-G86" secondAttribute="centerY" id="GQH-DU-1EA"/>
+                            <constraint firstItem="MUx-r8-8Ok" firstAttribute="centerX" secondItem="euf-aX-G86" secondAttribute="centerX" id="cEY-rl-XVX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JWV-mh-gnm"/>
+                    </view>
+                    <connections>
+                        <outlet property="titulo1" destination="MUx-r8-8Ok" id="uC5-CX-SEv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PMq-iC-kWF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-469" y="145"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="Hz2-ZE-Qb2">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" id="vZD-84-Uu1" customClass="ViewController2" customModule="CursoAluraSwiftViagens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O4j-uq-6ba">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Página 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeC-qt-HrZ">
+                                <rect key="frame" x="127" y="273.5" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VeC-qt-HrZ" firstAttribute="centerY" secondItem="O4j-uq-6ba" secondAttribute="centerY" id="3Hy-Jk-etH"/>
+                            <constraint firstItem="VeC-qt-HrZ" firstAttribute="centerX" secondItem="O4j-uq-6ba" secondAttribute="centerX" id="odP-Lh-tAT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pGR-K1-zw1"/>
+                    </view>
+                    <connections>
+                        <outlet property="titulo2" destination="VeC-qt-HrZ" id="aiq-3M-ITz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0C-cd-t6n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244" y="145"/>
         </scene>
     </scenes>
 </document>

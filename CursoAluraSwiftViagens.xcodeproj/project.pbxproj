@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F5BECBD2386C7B20070E045 /* PagerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5BECBB2386C7B20070E045 /* PagerTableViewCell.swift */; };
+		5F5BECBE2386C7B30070E045 /* PagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F5BECBC2386C7B20070E045 /* PagerTableViewCell.xib */; };
+		5F5BECC32386ED1C0070E045 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5BECC02386ED1B0070E045 /* ViewController2.swift */; };
+		5F5BECC42386ED1C0070E045 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5BECC12386ED1B0070E045 /* CustomPageViewController.swift */; };
+		5F5BECC52386ED1C0070E045 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5BECC22386ED1B0070E045 /* ViewController1.swift */; };
 		9E2E9EFD2336A3F200B7F822 /* img5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E2E9EF82336A3F100B7F822 /* img5.jpg */; };
 		9E2E9EFE2336A3F200B7F822 /* img4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E2E9EF92336A3F100B7F822 /* img4.jpg */; };
 		9E2E9EFF2336A3F200B7F822 /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E2E9EFA2336A3F100B7F822 /* img3.jpg */; };
@@ -29,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F5BECBB2386C7B20070E045 /* PagerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTableViewCell.swift; sourceTree = "<group>"; };
+		5F5BECBC2386C7B20070E045 /* PagerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagerTableViewCell.xib; sourceTree = "<group>"; };
+		5F5BECC02386ED1B0070E045 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		5F5BECC12386ED1B0070E045 /* CustomPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		5F5BECC22386ED1B0070E045 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		9E2E9EF82336A3F100B7F822 /* img5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img5.jpg; sourceTree = "<group>"; };
 		9E2E9EF92336A3F100B7F822 /* img4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img4.jpg; sourceTree = "<group>"; };
 		9E2E9EFA2336A3F100B7F822 /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
@@ -63,6 +73,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F5BECBF2386ED110070E045 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				5F5BECC12386ED1B0070E045 /* CustomPageViewController.swift */,
+				5F5BECC22386ED1B0070E045 /* ViewController1.swift */,
+				5F5BECC02386ED1B0070E045 /* ViewController2.swift */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
 		9E2E9EF72336A3F100B7F822 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,11 +123,14 @@
 		9E61A788233F820500647173 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5F5BECBF2386ED110070E045 /* Page */,
 				9E7A23D62385B8F000860CFD /* TableView.swift */,
 				9E7A23DA2385C08800860CFD /* TableCell.xib */,
 				9E7A23DC2385C95300860CFD /* TableCell.swift */,
 				9E7A23DE2385CC9300860CFD /* LabelTitle.xib */,
 				9E7A23E02385CCB800860CFD /* LabelTitle.swift */,
+				5F5BECBC2386C7B20070E045 /* PagerTableViewCell.xib */,
+				5F5BECBB2386C7B20070E045 /* PagerTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -225,6 +248,7 @@
 				9E2E9EFF2336A3F200B7F822 /* img3.jpg in Resources */,
 				9E7A23DF2385CC9400860CFD /* LabelTitle.xib in Resources */,
 				9E2E9EFE2336A3F200B7F822 /* img4.jpg in Resources */,
+				5F5BECBE2386C7B30070E045 /* PagerTableViewCell.xib in Resources */,
 				9E7A23DB2385C08800860CFD /* TableCell.xib in Resources */,
 				9E2E9EFD2336A3F200B7F822 /* img5.jpg in Resources */,
 				9EE869AA23365F610089302C /* Assets.xcassets in Resources */,
@@ -241,12 +265,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EE869B5233675AB0089302C /* Viagem.swift in Sources */,
+				5F5BECC52386ED1C0070E045 /* ViewController1.swift in Sources */,
 				9EE869B9233678520089302C /* ViagemDAO.swift in Sources */,
 				9E7A23DD2385C95300860CFD /* TableCell.swift in Sources */,
 				9EE869A523365F480089302C /* ViewController.swift in Sources */,
+				5F5BECC32386ED1C0070E045 /* ViewController2.swift in Sources */,
 				9EE869A123365F480089302C /* AppDelegate.swift in Sources */,
 				9E7A23E12385CCB800860CFD /* LabelTitle.swift in Sources */,
 				9E7A23D72385B8F000860CFD /* TableView.swift in Sources */,
+				5F5BECC42386ED1C0070E045 /* CustomPageViewController.swift in Sources */,
+				5F5BECBD2386C7B20070E045 /* PagerTableViewCell.swift in Sources */,
 				9E7A23D52385B7FC00860CFD /* ReusableView.swift in Sources */,
 				9EE869A323365F480089302C /* SceneDelegate.swift in Sources */,
 			);

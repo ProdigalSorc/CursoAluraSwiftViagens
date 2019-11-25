@@ -1,25 +1,21 @@
 //
-//  LabelTitle.swift
+//  PagerTableViewCell.swift
 //  CursoAluraSwiftViagens
 //
-//  Created by Rodrigo Paixão on 20/11/19.
+//  Created by FOTON on 21/11/19.
 //  Copyright © 2019 Rodrigo Paixão. All rights reserved.
 //
 
 import UIKit
 
-
-protocol LabelTitleDelegate {
+protocol PagerTableViewCellDelegate {
     func addController(controller: UIViewController)
 }
 
-class LabelTitle: UITableViewCell {
-    
-    @IBOutlet weak var labelTitle: UILabel!
-    
+class PagerTableViewCell: UITableViewCell {
     
     private var pageController: CustomPageViewController!
-    var delegate: LabelTitleDelegate?
+    var delegate: PagerTableViewCellDelegate?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -27,15 +23,16 @@ class LabelTitle: UITableViewCell {
         contentView.addSubview(pageController.view)
     }
     
-    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        pageController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CustomPageViewController") as? CustomPageViewController
+        contentView.addSubview(pageController.view)
         
-        loadData()
+        pageController.view.frame = contentView.frame
     }
     
     func loadData(){
         delegate?.addController(controller: pageController)
     }
-
+    
 }
