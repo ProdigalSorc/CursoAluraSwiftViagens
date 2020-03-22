@@ -15,4 +15,14 @@ class TableCell: UITableViewCell {
     @IBOutlet weak var imagem: UIImageView!
     @IBOutlet weak var titulo: UILabel!
 
+    public func bind(_ viagem: Viagem){
+        titulo.text = viagem.titulo
+        qtdDias.text = "\(viagem.quantidadeDeDias) dias"
+        preco.text = "R$ \(viagem.preco)"
+        imagem.image = UIImage(named: viagem.caminhoDaImagem)
+        imagem.translatesAutoresizingMaskIntoConstraints = false
+        imagem.clipsToBounds = true
+        imagem.layer.cornerRadius = 10
+        imagem.layer.masksToBounds = true
+    }
 }

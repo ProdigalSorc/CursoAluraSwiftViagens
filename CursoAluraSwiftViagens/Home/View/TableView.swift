@@ -39,8 +39,6 @@ class TableView: UITableView {
         separatorStyle = .none
         sectionHeaderHeight = UITableView.automaticDimension
         rowHeight = UITableView.automaticDimension
-        
-//        self.register(UINib(nibName: "LabelTitle", bundle: nil), forCellReuseIdentifier: "LabelTitle")
         self.register(UINib(nibName: "TableCell", bundle: nil), forCellReuseIdentifier: "TableCell")
     }
 }
@@ -51,23 +49,8 @@ extension TableView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "LabelTitle", for: indexPath) as! LabelTitle
-//
-//        cell.labelTitle.text = "Titulo novo"
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableCell", for: indexPath) as! TableCell
-
-        let viagemAtual = listaViagens[indexPath.row]
-        cell.titulo.text = viagemAtual.titulo
-        cell.qtdDias.text = "\(viagemAtual.quantidadeDeDias) dias"
-        cell.preco.text = "R$ \(viagemAtual.preco)"
-        cell.imagem.image = UIImage(named: viagemAtual.caminhoDaImagem)
-        cell.imagem.translatesAutoresizingMaskIntoConstraints = false
-        cell.imagem.clipsToBounds = true
-        cell.imagem.layer.cornerRadius = 10
-        cell.imagem.layer.masksToBounds = true
-        
+        cell.bind(listaViagens[indexPath.row])
         return cell
     }
 }
@@ -86,7 +69,6 @@ extension TableView: UITableViewDelegate {
         return tableView.frame.width / imageRatio
     }
 }
-
 
 extension UIImage {
     func getImageRatio() -> CGFloat {

@@ -16,8 +16,6 @@
 		9E7A23D72385B8F000860CFD /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A23D62385B8F000860CFD /* TableView.swift */; };
 		9E7A23DB2385C08800860CFD /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7A23DA2385C08800860CFD /* TableCell.xib */; };
 		9E7A23DD2385C95300860CFD /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A23DC2385C95300860CFD /* TableCell.swift */; };
-		9E7A23DF2385CC9400860CFD /* LabelTitle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7A23DE2385CC9300860CFD /* LabelTitle.xib */; };
-		9E7A23E12385CCB800860CFD /* LabelTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A23E02385CCB800860CFD /* LabelTitle.swift */; };
 		9EE869A123365F480089302C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE869A023365F480089302C /* AppDelegate.swift */; };
 		9EE869A323365F480089302C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE869A223365F480089302C /* SceneDelegate.swift */; };
 		9EE869A523365F480089302C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE869A423365F480089302C /* ViewController.swift */; };
@@ -38,8 +36,6 @@
 		9E7A23D62385B8F000860CFD /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		9E7A23DA2385C08800860CFD /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		9E7A23DC2385C95300860CFD /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
-		9E7A23DE2385CC9300860CFD /* LabelTitle.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelTitle.xib; sourceTree = "<group>"; };
-		9E7A23E02385CCB800860CFD /* LabelTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTitle.swift; sourceTree = "<group>"; };
 		9EE8699D23365F470089302C /* CursoAluraSwiftViagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoAluraSwiftViagens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE869A023365F480089302C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EE869A223365F480089302C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,8 +102,6 @@
 				9E7A23D62385B8F000860CFD /* TableView.swift */,
 				9E7A23DA2385C08800860CFD /* TableCell.xib */,
 				9E7A23DC2385C95300860CFD /* TableCell.swift */,
-				9E7A23DE2385CC9300860CFD /* LabelTitle.xib */,
-				9E7A23E02385CCB800860CFD /* LabelTitle.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,7 +217,6 @@
 				9EE869AD23365F610089302C /* LaunchScreen.storyboard in Resources */,
 				9E2E9F012336A3F200B7F822 /* img1.png in Resources */,
 				9E2E9EFF2336A3F200B7F822 /* img3.jpg in Resources */,
-				9E7A23DF2385CC9400860CFD /* LabelTitle.xib in Resources */,
 				9E2E9EFE2336A3F200B7F822 /* img4.jpg in Resources */,
 				9E7A23DB2385C08800860CFD /* TableCell.xib in Resources */,
 				9E2E9EFD2336A3F200B7F822 /* img5.jpg in Resources */,
@@ -245,7 +238,6 @@
 				9E7A23DD2385C95300860CFD /* TableCell.swift in Sources */,
 				9EE869A523365F480089302C /* ViewController.swift in Sources */,
 				9EE869A123365F480089302C /* AppDelegate.swift in Sources */,
-				9E7A23E12385CCB800860CFD /* LabelTitle.swift in Sources */,
 				9E7A23D72385B8F000860CFD /* TableView.swift in Sources */,
 				9E7A23D52385B7FC00860CFD /* ReusableView.swift in Sources */,
 				9EE869A323365F480089302C /* SceneDelegate.swift in Sources */,
