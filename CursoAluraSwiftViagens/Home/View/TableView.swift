@@ -61,7 +61,7 @@ extension TableView: UITableViewDataSource {
         let viagemAtual = listaViagens[indexPath.row]
         cell.titulo.text = viagemAtual.titulo
         cell.qtdDias.text = "\(viagemAtual.quantidadeDeDias) dias"
-        cell.preco.text = viagemAtual.preco
+        cell.preco.text = "R$ \(viagemAtual.preco)"
         cell.imagem.image = UIImage(named: viagemAtual.caminhoDaImagem)
         cell.imagem.translatesAutoresizingMaskIntoConstraints = false
         cell.imagem.clipsToBounds = true
@@ -75,7 +75,8 @@ extension TableView: UITableViewDataSource {
 extension TableView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 175
+        // Ajustando layout para iPhone e Ipad
+        return UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone ? 175 : 260
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
