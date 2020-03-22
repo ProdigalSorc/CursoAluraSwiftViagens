@@ -12,6 +12,9 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
    
     @IBOutlet weak var colecaoPacotesViagem: UICollectionView!
     
+    let listaViagens:Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         colecaoPacotesViagem.dataSource = self
@@ -20,12 +23,12 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return listaViagens.count
     }
        
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let celulaPacote = collectionView.dequeueReusableCell(withReuseIdentifier: "PacoteViagemCollectionViewCell", for: indexPath) as! PacoteViagemCollectionViewCell
-        celulaPacote.backgroundColor(UIColor.blue)
+        celulaPacote.bind(listaViagens[indexPath.row])
         return celulaPacote
     }
        

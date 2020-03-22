@@ -10,7 +10,19 @@ import UIKit
 
 class PacoteViagemCollectionViewCell: UICollectionViewCell {
 
-    public func backgroundColor(_ color: UIColor){
-        self.backgroundColor = color
+    @IBOutlet weak var imagemViagem: UIImageView!
+    @IBOutlet weak var labelTitulo: UILabel!
+    @IBOutlet weak var labelQuantidadeDeDias: UILabel!
+    @IBOutlet weak var labelPreco: UILabel!
+    
+    public func bind(_ viagem: Viagem){
+        labelTitulo.text = viagem.titulo
+        labelQuantidadeDeDias.text = "\(viagem.quantidadeDeDias) dias"
+        labelPreco.text = "R$ \(viagem.preco)"
+        imagemViagem.image = UIImage(named: viagem.caminhoDaImagem)
+        self.layer.borderWidth = 0.5
+        self.layer.borderColor = UIColor(red: 85.0/255.0, green: 85.0/255.0, blue: 85.0/255.0, alpha: 1).cgColor
+        self.layer.cornerRadius = 8
     }
+    
 }
