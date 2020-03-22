@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PacotesViagensViewController: UIViewController, UICollectionViewDataSource {
+class PacotesViagensViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
    
     @IBOutlet weak var colecaoPacotesViagem: UICollectionView!
     
@@ -18,6 +18,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         colecaoPacotesViagem.dataSource = self
+        colecaoPacotesViagem.delegate = self
         colecaoPacotesViagem.register(UINib(nibName: "PacoteViagemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PacoteViagemCollectionViewCell")
     }
     
@@ -32,5 +33,9 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         return celulaPacote
     }
        
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let larguraCelula = collectionView.bounds.width / 2
+        return CGSize(width: larguraCelula - 15, height: 160)
+    }
 
 }
