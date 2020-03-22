@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -13,32 +13,41 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CursoAluraSwiftViagens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHk-pI-xxV" userLabel="View Header">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alura viagens" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TlG-Bx-fH2">
-                                        <rect key="frame" x="104" y="8" width="112" height="25"/>
+                                        <rect key="frame" x="292.5" y="8" width="183.5" height="42.5"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="31"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ESPECIAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHc-Kv-IhC">
-                                        <rect key="frame" x="39" y="37" width="90" height="28"/>
+                                        <rect key="frame" x="39" y="54.5" width="179" height="55"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                        </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BRASIL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywA-Ez-pOD">
-                                        <rect key="frame" x="39" y="66.5" width="80" height="32"/>
+                                        <rect key="frame" x="39" y="111" width="138" height="55"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="23"/>
                                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="40"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,16 +61,18 @@
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ywA-Ez-pOD" secondAttribute="trailing" constant="20" symbolic="YES" id="fYP-zg-HAD"/>
                                     <constraint firstItem="TlG-Bx-fH2" firstAttribute="top" secondItem="bHk-pI-xxV" secondAttribute="top" constant="8" id="itP-6z-dyA"/>
                                     <constraint firstItem="ywA-Ez-pOD" firstAttribute="leading" secondItem="bHk-pI-xxV" secondAttribute="leading" constant="39" id="jwD-vD-GxX"/>
-                                    <constraint firstAttribute="height" constant="145" id="o3g-kJ-f9h"/>
+                                    <constraint firstAttribute="height" constant="145" id="o3g-kJ-f9h">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                                    </constraint>
                                     <constraint firstItem="TlG-Bx-fH2" firstAttribute="centerX" secondItem="bHk-pI-xxV" secondAttribute="centerX" id="rju-AE-ob4"/>
                                     <constraint firstItem="YHc-Kv-IhC" firstAttribute="leading" secondItem="bHk-pI-xxV" secondAttribute="leading" constant="39" id="ubW-iy-Cg3"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5m4-vw-b7T" userLabel="View Buttom Hoteis">
-                                <rect key="frame" x="28" y="121" width="100" height="50"/>
+                                <rect key="frame" x="150" y="213" width="150" height="75"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C5j-qa-8Zn">
-                                        <rect key="frame" x="29" y="10" width="42" height="30"/>
+                                        <rect key="frame" x="29" y="10" width="92" height="55"/>
                                         <state key="normal" title="hotéis">
                                             <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         </state>
@@ -70,18 +81,24 @@
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="C5j-qa-8Zn" secondAttribute="trailing" constant="20" symbolic="YES" id="GRw-Jd-B4D"/>
+                                    <constraint firstItem="C5j-qa-8Zn" firstAttribute="centerX" secondItem="5m4-vw-b7T" secondAttribute="centerX" id="HHy-wN-w7k"/>
+                                    <constraint firstItem="C5j-qa-8Zn" firstAttribute="centerY" secondItem="5m4-vw-b7T" secondAttribute="centerY" id="PYB-HN-ODP"/>
                                     <constraint firstItem="C5j-qa-8Zn" firstAttribute="leading" secondItem="5m4-vw-b7T" secondAttribute="leading" constant="29" id="RlO-YI-EcE"/>
                                     <constraint firstAttribute="bottom" secondItem="C5j-qa-8Zn" secondAttribute="bottom" constant="10" id="TOv-Wk-0Fh"/>
                                     <constraint firstItem="C5j-qa-8Zn" firstAttribute="top" secondItem="5m4-vw-b7T" secondAttribute="top" constant="10" id="orq-Iy-VfQ"/>
-                                    <constraint firstAttribute="height" constant="50" id="reO-xG-YoN"/>
-                                    <constraint firstAttribute="width" constant="100" id="zAJ-Sn-lUs"/>
+                                    <constraint firstAttribute="height" constant="50" id="reO-xG-YoN">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="100" id="zAJ-Sn-lUs">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Xy-er-Txk" userLabel="View Button Pacotes">
-                                <rect key="frame" x="185" y="121" width="100" height="50"/>
+                                <rect key="frame" x="468" y="213" width="150" height="75"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8I-gA-SUW">
-                                        <rect key="frame" x="21" y="10" width="55" height="30"/>
+                                        <rect key="frame" x="21" y="10" width="105" height="55"/>
                                         <state key="normal" title="pacotes">
                                             <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         </state>
@@ -91,24 +108,37 @@
                                 <constraints>
                                     <constraint firstItem="T8I-gA-SUW" firstAttribute="top" secondItem="6Xy-er-Txk" secondAttribute="top" constant="10" id="2tr-8W-jF6"/>
                                     <constraint firstAttribute="bottom" secondItem="T8I-gA-SUW" secondAttribute="bottom" constant="10" id="8gM-WD-nVN"/>
-                                    <constraint firstItem="T8I-gA-SUW" firstAttribute="leading" secondItem="6Xy-er-Txk" secondAttribute="leading" constant="21" id="Gzn-uV-rf0"/>
-                                    <constraint firstAttribute="height" constant="50" id="fkF-pt-SDt"/>
-                                    <constraint firstAttribute="width" constant="100" id="qRs-fi-naD"/>
-                                    <constraint firstAttribute="trailing" secondItem="T8I-gA-SUW" secondAttribute="trailing" constant="24" id="w29-hG-M81"/>
+                                    <constraint firstItem="T8I-gA-SUW" firstAttribute="centerY" secondItem="6Xy-er-Txk" secondAttribute="centerY" id="QX0-Ww-dLp"/>
+                                    <constraint firstItem="T8I-gA-SUW" firstAttribute="leading" secondItem="6Xy-er-Txk" secondAttribute="leading" constant="21" id="fDy-f5-9bc"/>
+                                    <constraint firstAttribute="height" constant="50" id="fkF-pt-SDt">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="100" id="qRs-fi-naD">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="T8I-gA-SUW" secondAttribute="trailing" constant="24" id="u3F-dU-OEm"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4kQ-gP-XUx" customClass="TableView" customModule="CursoAluraSwiftViagens" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="186" width="320" height="382"/>
+                                <rect key="frame" x="0.0" y="303" width="768" height="721"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4kQ-gP-XUx" secondAttribute="bottom" id="1Fy-ZB-U0d"/>
-                            <constraint firstItem="6Xy-er-Txk" firstAttribute="leading" secondItem="bHk-pI-xxV" secondAttribute="trailing" constant="-135" id="Hsh-xv-uo2"/>
-                            <constraint firstItem="5m4-vw-b7T" firstAttribute="top" secondItem="bHk-pI-xxV" secondAttribute="bottom" constant="-24" id="Iwg-QJ-B0Q"/>
-                            <constraint firstItem="6Xy-er-Txk" firstAttribute="top" secondItem="bHk-pI-xxV" secondAttribute="bottom" constant="-24" id="OOd-fo-b0V"/>
-                            <constraint firstItem="bHk-pI-xxV" firstAttribute="leading" secondItem="5m4-vw-b7T" secondAttribute="trailing" constant="-128" id="UHy-Jb-8U9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Xy-er-Txk" secondAttribute="trailing" constant="35" id="9tx-Ub-DKU">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="5m4-vw-b7T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="BNF-g8-Z0f">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
+                            <constraint firstItem="5m4-vw-b7T" firstAttribute="top" secondItem="bHk-pI-xxV" secondAttribute="bottom" constant="-23" id="Iwg-QJ-B0Q">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-37"/>
+                            </constraint>
+                            <constraint firstItem="6Xy-er-Txk" firstAttribute="top" secondItem="bHk-pI-xxV" secondAttribute="bottom" constant="-23" id="OOd-fo-b0V">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-37"/>
+                            </constraint>
                             <constraint firstItem="bHk-pI-xxV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="i64-BP-et8"/>
                             <constraint firstItem="4kQ-gP-XUx" firstAttribute="top" secondItem="5m4-vw-b7T" secondAttribute="bottom" constant="15" id="mYc-Xh-4X2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4kQ-gP-XUx" secondAttribute="trailing" id="ncX-eG-t6J"/>
