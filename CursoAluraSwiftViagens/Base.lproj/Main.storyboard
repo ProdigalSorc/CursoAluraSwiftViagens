@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H1R-dg-xlL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eYf-JO-IFn">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--procurar-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CursoAluraSwiftViagens" customModuleProvider="target" sceneMemberID="viewController">
@@ -126,7 +126,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4kQ-gP-XUx" customClass="TableView" customModule="CursoAluraSwiftViagens" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="187" width="375" height="480"/>
+                                <rect key="frame" x="0.0" y="187" width="375" height="431"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -154,6 +154,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="procurar" id="3cD-uj-DZY"/>
                     <connections>
                         <outlet property="tabelaViagens" destination="4kQ-gP-XUx" id="l8B-Df-ddm"/>
                         <outlet property="viewHoteis" destination="5m4-vw-b7T" id="6bC-qd-rgc"/>
@@ -164,7 +165,25 @@
             </objects>
             <point key="canvasLocation" x="-67.5" y="137.32394366197184"/>
         </scene>
-        <!--Pacotes Viagens View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="oFz-lT-Aa3">
+            <objects>
+                <tabBarController id="eYf-JO-IFn" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mTH-aV-v4j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="hAM-e4-WWV"/>
+                        <segue destination="H1R-dg-xlL" kind="relationship" relationship="viewControllers" id="wzE-9S-Tmr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vGM-e3-aaE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-887" y="137"/>
+        </scene>
+        <!--pacotes-->
         <scene sceneID="2bU-i3-8z3">
             <objects>
                 <viewController id="H1R-dg-xlL" customClass="PacotesViagensViewController" customModule="CursoAluraSwiftViagens" customModuleProvider="target" sceneMemberID="viewController">
@@ -173,7 +192,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Yce-oZ-xL2">
-                                <rect key="frame" x="15" y="0.0" width="345" height="667"/>
+                                <rect key="frame" x="15" y="0.0" width="345" height="618"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacotes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uca-Lf-sfp">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="30"/>
@@ -202,7 +221,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Lr8-Jq-zpD">
-                                        <rect key="frame" x="0.0" y="90" width="345" height="577"/>
+                                        <rect key="frame" x="0.0" y="90" width="345" height="528"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zjV-60-a1s">
                                             <size key="itemSize" width="50" height="50"/>
@@ -224,6 +243,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fkj-Kq-Lyf"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="pacotes" id="0n4-Ld-8Vg"/>
                     <connections>
                         <outlet property="colecaoPacotesViagem" destination="Lr8-Jq-zpD" id="SXH-Rv-dPf"/>
                     </connections>
