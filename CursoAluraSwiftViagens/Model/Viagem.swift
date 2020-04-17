@@ -8,7 +8,8 @@
 
 import UIKit
 
-class Viagem: NSObject{
+//necessário colocar @objcMembers para filtrar o objeto
+@objcMembers class Viagem: NSObject{
     let titulo: String
     let quantidadeDeDias: Int
     let preco: String
