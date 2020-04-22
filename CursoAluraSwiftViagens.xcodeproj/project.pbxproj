@@ -16,6 +16,7 @@
 		9E7A23D72385B8F000860CFD /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A23D62385B8F000860CFD /* TableView.swift */; };
 		9E7A23DB2385C08800860CFD /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7A23DA2385C08800860CFD /* TableCell.xib */; };
 		9E7A23DD2385C95300860CFD /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A23DC2385C95300860CFD /* TableCell.swift */; };
+		9E9941A324505E57008D5509 /* DetalhesViagensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9941A224505E57008D5509 /* DetalhesViagensViewController.swift */; };
 		9ED9AD272427C6A6007E8638 /* PacotesViagensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9AD262427C6A6007E8638 /* PacotesViagensViewController.swift */; };
 		9ED9AD2A2427C7AA007E8638 /* PacoteViagemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED9AD282427C7AA007E8638 /* PacoteViagemCollectionViewCell.swift */; };
 		9ED9AD2B2427C7AA007E8638 /* PacoteViagemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED9AD292427C7AA007E8638 /* PacoteViagemCollectionViewCell.xib */; };
@@ -39,6 +40,7 @@
 		9E7A23D62385B8F000860CFD /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		9E7A23DA2385C08800860CFD /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		9E7A23DC2385C95300860CFD /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		9E9941A224505E57008D5509 /* DetalhesViagensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViagensViewController.swift; sourceTree = "<group>"; };
 		9ED9AD262427C6A6007E8638 /* PacotesViagensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacotesViagensViewController.swift; sourceTree = "<group>"; };
 		9ED9AD282427C7AA007E8638 /* PacoteViagemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagemCollectionViewCell.swift; sourceTree = "<group>"; };
 		9ED9AD292427C7AA007E8638 /* PacoteViagemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PacoteViagemCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -128,6 +130,30 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		9E99419F24505E0A008D5509 /* DetalhesViagem */ = {
+			isa = PBXGroup;
+			children = (
+				9E9941A124505E27008D5509 /* Controller */,
+				9E9941A024505E20008D5509 /* View */,
+			);
+			path = DetalhesViagem;
+			sourceTree = "<group>";
+		};
+		9E9941A024505E20008D5509 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9E9941A124505E27008D5509 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9E9941A224505E57008D5509 /* DetalhesViagensViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9ED9AD232427C652007E8638 /* Pacotes */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +204,7 @@
 				9E61A785233F81A300647173 /* Model */,
 				9E61A786233F81C400647173 /* Home */,
 				9ED9AD232427C652007E8638 /* Pacotes */,
+				9E99419F24505E0A008D5509 /* DetalhesViagem */,
 				9E61A789233F821800647173 /* ViagemDAO */,
 				9E7A23D32385B7DF00860CFD /* Utils */,
 				9E2E9EF72336A3F100B7F822 /* Assets */,
@@ -274,6 +301,7 @@
 				9EE869A523365F480089302C /* ViewController.swift in Sources */,
 				9ED9AD272427C6A6007E8638 /* PacotesViagensViewController.swift in Sources */,
 				9EE869A123365F480089302C /* AppDelegate.swift in Sources */,
+				9E9941A324505E57008D5509 /* DetalhesViagensViewController.swift in Sources */,
 				9E7A23D72385B8F000860CFD /* TableView.swift in Sources */,
 				9E7A23D52385B7FC00860CFD /* ReusableView.swift in Sources */,
 				9EE869A323365F480089302C /* SceneDelegate.swift in Sources */,
