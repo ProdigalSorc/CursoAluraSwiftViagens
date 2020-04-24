@@ -14,8 +14,8 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     @IBOutlet weak var pesquisarViagens: UISearchBar!
     @IBOutlet weak var labelContadorPacotes: UILabel!
     
-    let listaComTodasViagens:Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
-    var listaViagens:Array<Viagem> = []
+    let listaComTodasViagens:Array<PacoteViagem> = PacoteViagemDAO().retornaTodasAsViagens()
+    var listaViagens:Array<PacoteViagem> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +54,7 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         if searchText != "" {
             let filtroListaViagem = NSPredicate(format: "self.titulo contains %@", searchText)
             let lista = listaViagens as NSArray
-            let listaFiltrada:Array<Viagem> = lista.filtered(using: filtroListaViagem) as! Array
+            let listaFiltrada:Array<PacoteViagem> = lista.filtered(using: filtroListaViagem) as! Array
             listaViagens = listaFiltrada
         }
         self.labelContadorPacotes.text = self.atualizaContadorLable()

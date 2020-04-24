@@ -15,11 +15,11 @@ class PacoteViagemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var labelQuantidadeDeDias: UILabel!
     @IBOutlet weak var labelPreco: UILabel!
     
-    public func bind(_ viagem: Viagem){
-        labelTitulo.text = viagem.titulo
-        labelQuantidadeDeDias.text = "\(viagem.quantidadeDeDias) dias"
-        labelPreco.text = "R$ \(viagem.preco)"
-        imagemViagem.image = UIImage(named: viagem.caminhoDaImagem)
+    public func bind(_ pacoteViagem: PacoteViagem){
+        labelTitulo.text = pacoteViagem.viagem.titulo
+        labelQuantidadeDeDias.text = "\(pacoteViagem.viagem.quantidadeDeDias) dias"
+        labelPreco.text = "R$ \(pacoteViagem.viagem.preco)"
+        imagemViagem.image = UIImage(named: pacoteViagem.viagem.caminhoDaImagem)
         adjustBorder()
     }
     
