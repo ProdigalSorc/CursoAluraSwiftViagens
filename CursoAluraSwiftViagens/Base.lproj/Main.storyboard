@@ -393,6 +393,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVr-JY-pkv">
+                                <rect key="frame" x="15" y="0.0" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="voltar"/>
+                                <connections>
+                                    <action selector="botaoVolar:" destination="BZD-La-BZ3" eventType="touchUpInside" id="7x5-os-xsJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -402,6 +410,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TGa-PU-I27"/>
                     </view>
+                    <connections>
+                        <outlet property="imagemPacoteViagem" destination="nmx-SO-awT" id="4uE-Gf-oLr"/>
+                        <outlet property="labelDataViagem" destination="WWK-AW-dfH" id="Qa8-qE-wX1"/>
+                        <outlet property="labelDescricaoPacoteViagem" destination="A9h-B3-uNa" id="Lhd-IG-le1"/>
+                        <outlet property="labelPrecoPacoteViagem" destination="X7H-AR-2A4" id="nRC-U9-Cch"/>
+                        <outlet property="labelTituloPacoteViagem" destination="LRd-FH-V1T" id="pA7-TS-XLg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9BY-Rg-sBK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
