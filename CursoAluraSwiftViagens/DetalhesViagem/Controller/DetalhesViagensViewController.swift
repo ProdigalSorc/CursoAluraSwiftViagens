@@ -35,7 +35,6 @@ class DetalhesViagensViewController: UIViewController {
         self.scrollPrincipal.contentSize = CGSize(width: self.scrollPrincipal.frame.width, height: self.scrollPrincipal.frame.height + 320)
     }
     @IBAction func textFieldEntrouFoco(_ sender: UITextField) {
-        print("classeSistema")
         let datePickerView = UIDatePicker()
         datePickerView.datePickerMode = .date
         sender.inputView = datePickerView
