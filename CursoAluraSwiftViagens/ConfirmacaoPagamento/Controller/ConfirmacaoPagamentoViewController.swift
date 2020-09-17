@@ -18,26 +18,29 @@ class ConfirmacaoPagamentoViewController: UIViewController {
     @IBOutlet weak var labelData: UILabel!
     @IBOutlet weak var labelQuantidadePessoas: UILabel!
     @IBOutlet weak var labelDescricao: UILabel!
+    @IBOutlet weak var botaoVoltarPraHome: UIButton!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let pacote = pacote {
+            imagemPacoteViagem.image = UIImage(named: pacote.viagem.caminhoDaImagem)
+            labelTituloPacoteViagem.text = pacote.viagem.titulo.uppercased()
             labelHotel.text = pacote.nomeDoHotel
+            labelData.text = pacote.dataViagem
+            labelDescricao.text = pacote.descricao
+            self.imagemPacoteViagem.layer.cornerRadius = 10
+            self.imagemPacoteViagem.layer.masksToBounds = true
+            self.botaoVoltarPraHome.layer.cornerRadius = 8
         }
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func botaoVoltarHome(_ sender: UIButton) {
+        if let navigation = self.navigationController {
+            navigation.popToRootViewController(animated: true)
+        }
     }
-    */
 
 }

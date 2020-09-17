@@ -46,8 +46,7 @@ class DetalhesViagensViewController: UIViewController {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyBoard.instantiateViewController(identifier: "confirmacaoPagamento") as! ConfirmacaoPagamentoViewController
         controller.pacote = pacoteSelecionado
-        self.present(controller, animated: true, completion: nil)
-        
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     @objc func exibeDataTextFiel(sender: UIDatePicker){
