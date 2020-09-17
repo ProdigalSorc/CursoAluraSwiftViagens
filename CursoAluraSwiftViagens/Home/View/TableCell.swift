@@ -17,7 +17,7 @@ class TableCell: UITableViewCell {
 
     public func bind(_ viagem: Viagem){
         titulo.text = viagem.titulo
-        qtdDias.text = "\(viagem.quantidadeDeDias) dias"
+        qtdDias.text = viagem.quantidadeDeDias == 1 ? "1 dia" : "\(viagem.quantidadeDeDias) dias"
         preco.text = "R$ \(viagem.preco)"
         imagem.image = UIImage(named: viagem.caminhoDaImagem)
         imagem.translatesAutoresizingMaskIntoConstraints = false

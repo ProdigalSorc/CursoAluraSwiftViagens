@@ -17,7 +17,7 @@ class PacoteViagemCollectionViewCell: UICollectionViewCell {
     
     public func bind(_ pacoteViagem: PacoteViagem){
         labelTitulo.text = pacoteViagem.viagem.titulo
-        labelQuantidadeDeDias.text = "\(pacoteViagem.viagem.quantidadeDeDias) dias"
+        labelQuantidadeDeDias.text = pacoteViagem.viagem.quantidadeDeDias == 1 ? "1 dia" : "\(pacoteViagem.viagem.quantidadeDeDias) dias"
         labelPreco.text = "R$ \(pacoteViagem.viagem.preco)"
         imagemViagem.image = UIImage(named: pacoteViagem.viagem.caminhoDaImagem)
         adjustBorder()
