@@ -26,6 +26,7 @@
 		9E03576D2452FF5800944E05 /* img11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E03575C2452FF5800944E05 /* img11.jpg */; };
 		9E03576E2452FF5800944E05 /* img10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9E03575D2452FF5800944E05 /* img10.jpg */; };
 		9E03576F2452FF5800944E05 /* icon_hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E03575E2452FF5800944E05 /* icon_hotel.png */; };
+		9E367D3B25138B0C00BFAB9C /* ConfirmacaoPagamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E367D3A25138B0C00BFAB9C /* ConfirmacaoPagamentoViewController.swift */; };
 		9E7A23D52385B7FC00860CFD /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A23D42385B7FC00860CFD /* ReusableView.swift */; };
 		9E7A23D72385B8F000860CFD /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7A23D62385B8F000860CFD /* TableView.swift */; };
 		9E7A23DB2385C08800860CFD /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E7A23DA2385C08800860CFD /* TableCell.xib */; };
@@ -64,6 +65,7 @@
 		9E03575C2452FF5800944E05 /* img11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img11.jpg; sourceTree = "<group>"; };
 		9E03575D2452FF5800944E05 /* img10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img10.jpg; sourceTree = "<group>"; };
 		9E03575E2452FF5800944E05 /* icon_hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hotel.png; sourceTree = "<group>"; };
+		9E367D3A25138B0C00BFAB9C /* ConfirmacaoPagamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmacaoPagamentoViewController.swift; sourceTree = "<group>"; };
 		9E7A23D42385B7FC00860CFD /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		9E7A23D62385B8F000860CFD /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		9E7A23DA2385C08800860CFD /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
@@ -118,6 +120,22 @@
 			);
 			name = Assets;
 			path = "../../../../../Downloads/arquivos-externos/Assets";
+			sourceTree = "<group>";
+		};
+		9E367D3825138AAE00BFAB9C /* ConfirmacaoPagamento */ = {
+			isa = PBXGroup;
+			children = (
+				9E367D3925138AB400BFAB9C /* Controller */,
+			);
+			path = ConfirmacaoPagamento;
+			sourceTree = "<group>";
+		};
+		9E367D3925138AB400BFAB9C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9E367D3A25138B0C00BFAB9C /* ConfirmacaoPagamentoViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		9E61A785233F81A300647173 /* Model */ = {
@@ -248,6 +266,7 @@
 				9E61A786233F81C400647173 /* Home */,
 				9ED9AD232427C652007E8638 /* Pacotes */,
 				9E99419F24505E0A008D5509 /* DetalhesViagem */,
+				9E367D3825138AAE00BFAB9C /* ConfirmacaoPagamento */,
 				9E61A789233F821800647173 /* ViagemDAO */,
 				9E7A23D32385B7DF00860CFD /* Utils */,
 				9E03574D2452FF5800944E05 /* Assets */,
@@ -351,6 +370,7 @@
 			files = (
 				9EE869B5233675AB0089302C /* Viagem.swift in Sources */,
 				9ED9AD2A2427C7AA007E8638 /* PacoteViagemCollectionViewCell.swift in Sources */,
+				9E367D3B25138B0C00BFAB9C /* ConfirmacaoPagamentoViewController.swift in Sources */,
 				9E03574A2452FCB700944E05 /* PacoteViagem.swift in Sources */,
 				9EE869B9233678520089302C /* ViagemDAO.swift in Sources */,
 				9E7A23DD2385C95300860CFD /* TableCell.swift in Sources */,
